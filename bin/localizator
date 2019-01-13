@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require 'pathname'
+
+$LOAD_PATH << (Pathname.new(__FILE__).dirname + '../lib').expand_path
+
+require 'localizator'
+
+Localizator::CLI.new(ARGV).()
